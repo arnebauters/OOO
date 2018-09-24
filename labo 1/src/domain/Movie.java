@@ -1,8 +1,16 @@
 package domain;
 
 public class Movie extends Product {
+    public Movie(String title, String id, String type) {
+        super(title, id, type);
+    }
 
-    public Movie(String id, String title, String type) {
-        super(id, title, type);
+    public double getPrice(int days){
+        double price = 0;
+        int daysLeft = days - 3;
+        if (daysLeft > 0) {
+            price += (daysLeft * 2);
+        }
+        return price;
     }
 }
