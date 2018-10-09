@@ -5,7 +5,8 @@ import domain.Text;
 
 import javax.swing.*;
 
-public class Main {
+public class
+Main {
     public static void main(String[] args) {
         int keuze = Integer.parseInt(JOptionPane.showInputDialog(null, "Kies een algoritme:\n1) Caesar\n2) Mirror\n\n0) Quit"));
         while (keuze != 0) {
