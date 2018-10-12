@@ -90,15 +90,19 @@ public class PartyItem {
         return "State: " + this.currentState;
     }
 
-    public void verander_conditie_voorwerp(){
-        if(this.beschadiging == true){
-            this.beschadiging = false;
-        }else{
-            this.beschadiging = true;
-        }
+    public void voorwerp_beschadigd(){
+        this.beschadiging = true;
+    }
+
+    public void voorwerp_hersteld(){
+        this.beschadiging = false;
     }
 
     public boolean getBeschadiging(){
         return this.beschadiging;
+    }
+
+    public String getStatus(){
+        return this.currentState.toString();
     }
 }
